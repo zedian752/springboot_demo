@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.spring_demo.config.RedisConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.spring_demo.config.prefixConfig.whiteListConfig

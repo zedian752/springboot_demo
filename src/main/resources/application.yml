@@ -1,0 +1,67 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/d_travel?useSSL=false
+#    host: jdbc:mysql://127.0.0.1:3306/d_travel
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.72.129
+    port: 15001
+    password: 123456
+mybatis:
+  type-aliases-package: org.spring_demo.entity
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations:
+    - classpath:dao/*.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql日志
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      # logic-delete-field: deleted
+
+server:
+  port: 9001
+#logging:
+#  level: debug
+
+#dubbo:
+#  application:
+#    name: dubbo_service_user
+#  registry:
+#    address: zookeeper://192.168.72.129:2181
+#  protocol:
+#    port: 20880
+#    name: dubbo
+#  scan:
+#    base-packages: org.spring_demo.service
+
+#fortest:
+#    id: 1000
+logging:
+  level:
+    root: info
+  config: classpath:log4j2-dev.xml
+test:
+  service:
+    config: sabcdef
+    password: 123
+service:
+  whitelist:
+    list:
+      - "1"
+      - "2"
+
+#    username: "jewr"
+rocketmq:
+  name-server: 192.168.72.129:9876
+  producer:
+    group: myGroup
