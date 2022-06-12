@@ -1,7 +1,6 @@
 package org.spring_demo.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.test.Service.TestService;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.spring_demo.dao.UserDaoPlus;
 import org.spring_demo.entity.Student;
@@ -39,8 +38,6 @@ public class emptyController {
 
     @Autowired
     SqlSessionTemplate sqlSessionTemplate;
-    @Autowired
-    TestService testService;
 
     @Autowired
     JedisResPool JedisResPool;
