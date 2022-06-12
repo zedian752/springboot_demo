@@ -31,7 +31,6 @@ public class UserApiImplTest {
     @Test
     public void addUserController() throws Exception {
         int count = 10; // 请求次数
-        executorService.execute();
         String url = target + "/addUser9999";
         List<String> resList = new CopyOnWriteArrayList<>(); // 多并发下出现的null元素问题
 

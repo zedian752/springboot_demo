@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.test.Service.TestService;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.spring_demo.dao.UserDaoPlus;
-import org.spring_demo.entity.Fortest;
 import org.spring_demo.entity.Student;
 import org.spring_demo.entity.User;
 import org.spring_demo.utils.JedisResPool;
@@ -13,7 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.multipart.MultipartFile;
@@ -23,9 +25,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
-import java.net.Socket;
-import java.util.HashMap;
-import java.util.Map;
 
 @Slf4j
 @RestController
@@ -68,13 +67,13 @@ public class emptyController {
 //        response.setContentType("application/json;charset=utf-8");
         return "efsfs网盘fsfs";
     }
-    @RequestMapping(value = "/quickMap")
-    public Map quick2(@RequestBody(required = false) Fortest fortest) throws IOException {
-        Socket a = new Socket("1277", 32);
-
-
-        return new HashMap<String, String>(){{put("1","2");}};
-    }
+//    @RequestMapping(value = "/quickMap")
+//    public Map quick2(@RequestBody(required = false) Fortest fortest) throws IOException {
+//        Socket a = new Socket("1277", 32);
+//
+//
+//        return new HashMap<String, String>(){{put("1","2");}};
+//    }
     // 批量上传文件
     @PostMapping("/import")
     public void upload_test(Student student) { //

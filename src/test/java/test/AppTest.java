@@ -1,13 +1,6 @@
 package test;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spring_demo.Go;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.concurrent.ArrayBlockingQueue;
 
 //@RunWith(SpringRunner.class)
 //@SpringBootTest(classes = Go.class)

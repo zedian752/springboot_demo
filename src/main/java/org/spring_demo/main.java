@@ -1,10 +1,8 @@
 package org.spring_demo;
 
 
-import org.spring_demo.utils.SegmentLock;
 
 public class main {
-    public static SegmentLock<String> segmentLock = new SegmentLock<String>();
     public static void main(String args[]) throws InterruptedException {
 //            new Thread(new Runnable() {
 //                @SneakyThrows
