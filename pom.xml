@@ -231,10 +231,18 @@
                 <includes><!--包括目录下的.properties,.xml文件都会扫描到-->
                     <include>**/*.xml</include>
                 </includes>
+
 <!--                <filtering>false</filtering>-->
             </resource>
-        </resources>
 
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
+        <finalName>springboot_demo</finalName>
 
 
     </build>
