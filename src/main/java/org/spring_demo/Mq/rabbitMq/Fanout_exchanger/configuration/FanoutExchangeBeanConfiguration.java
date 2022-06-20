@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
-@Configuration
+//@Configuration
 public class FanoutExchangeBeanConfiguration {
     @Bean(MqAttrConfiguration.RABBITMQ_QUEUE_TOPIC_A)
     public Queue rabbitmqFanoutQueueA(){

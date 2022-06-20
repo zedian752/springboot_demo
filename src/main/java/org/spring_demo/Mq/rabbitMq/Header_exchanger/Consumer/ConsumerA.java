@@ -11,7 +11,7 @@ import java.util.Map;
 import org.springframework.amqp.core.Message;
 @Slf4j
 
-@Component("ConsumerHeaderA")
+//@Component("ConsumerHeaderA")
 public class ConsumerA {
 
     @RabbitListener(queuesToDeclare = @Queue(MqAttrConfiguration.RABBITMQ_QUEUE_HEADER_A))

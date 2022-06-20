@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class TopicExchangeBeanConfiguration {
     @Bean(MqAttrConfiguration.RABBITMQ_QUEUE_TOPIC_A)
     public Queue rabbitmqTopicQueueA(){

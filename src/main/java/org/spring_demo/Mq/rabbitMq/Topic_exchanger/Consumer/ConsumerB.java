@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Slf4j
-@Component("ConsumerTopicB")
-@RabbitListener(queuesToDeclare = @Queue(MqAttrConfiguration.RABBITMQ_QUEUE_TOPIC_B))
+//@Component("ConsumerTopicB")
+//@RabbitListener(queuesToDeclare = @Queue(MqAttrConfiguration.RABBITMQ_QUEUE_TOPIC_B))
 public class ConsumerB {
 
 

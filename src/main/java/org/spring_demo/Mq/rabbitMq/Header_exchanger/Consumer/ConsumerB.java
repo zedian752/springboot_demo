@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 import org.springframework.amqp.core.Message;
 @Slf4j
-@Component("ConsumerHeaderB")
+//@Component("ConsumerHeaderB")
 public class ConsumerB {
 
 
