@@ -78,6 +78,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
+        <!-- 解析和修改yml；用于注入application.yml实现多环境-->
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
@@ -265,6 +266,8 @@
 
             <resource>
                 <directory>src/main/resources</directory>
+                <!-- 是否对配置文件中的占位符进行替换 -->
+                <filtering>true</filtering>
                 <includes>
                     <include>**/*</include>
                 </includes>
