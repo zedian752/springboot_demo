@@ -13,8 +13,8 @@ import java.io.IOException;
 import java.util.Map;
 
 @Slf4j
-@Component
-@RabbitListener(queuesToDeclare = @Queue(DirectExchangeBeanConfiguration.DEAD_LETTER_QUEUE_NAME))
+//@Component
+//@RabbitListener(queues =  DirectExchangeBeanConfiguration.DEAD_LETTER_QUEUE_NAME)
 public class DeadLetterConsumer {
 
     @RabbitHandler
