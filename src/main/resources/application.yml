@@ -1,11 +1,9 @@
+server:
+  port: 9001
 
 spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/d_travel?useSSL=false
-#    host: jdbc:mysql://127.0.0.1:3306/d_travel
-    username: root
-    password: 123456
+  profiles:
+    active: @profileActive@
   redis:
     host: 192.168.72.129
     port: 15001
@@ -28,6 +26,7 @@ spring:
           initial-interval: 1000
           max-interval: 1000
 
+
 mybatis:
   type-aliases-package: org.spring_demo.entity
   configuration:
@@ -46,8 +45,6 @@ mybatis-plus:
       logic-not-delete-value: 0
       # logic-delete-field: deleted
 
-server:
-  port: 9001
 #logging:
 #  level: debug
 
