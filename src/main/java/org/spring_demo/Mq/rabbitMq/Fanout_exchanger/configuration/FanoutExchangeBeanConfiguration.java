@@ -1,13 +1,12 @@
 package org.spring_demo.Mq.rabbitMq.Fanout_exchanger.configuration;
 
-import org.springframework.amqp.core.*;
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.FanoutExchange;
+import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 //@Configuration
 public class FanoutExchangeBeanConfiguration {

@@ -91,7 +91,19 @@ public class emptyController {
     public ResponseEntity<String> exceptionhandler(){
         return new ResponseEntity<String>("服务端异常500", HttpStatus.INTERNAL_SERVER_ERROR);
     }
+    static String token = "1234";
+    @GetMapping("/user/get")
+    public User getUser(String id, String tokenId) {
+        if (!token.equals(tokenId)) {
+            return null;
+        }
+        return userDaoPlus.getById(id);
+    }
 
+        @GetMapping("/user/getToken")
+    public String getToken() {
 
+        return token;
+    }
 
 }

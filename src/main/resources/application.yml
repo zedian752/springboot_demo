@@ -15,6 +15,19 @@ spring:
     port: 5672
     username: admin
     password: 123456
+
+    publisher-confirms: true   #开启发送确认
+    publisher-returns: true  #开启发送失败回退
+      #开启ack
+    listener:
+      simple:
+        acknowledge-mode: auto
+        retry:
+          enabled: true
+          max-attempts: 2
+          initial-interval: 1000
+          max-interval: 1000
+
 mybatis:
   type-aliases-package: org.spring_demo.entity
   configuration:
