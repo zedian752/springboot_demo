@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.72.5:3306/d_travel?useSSL=false
+    url: jdbc:mysql://192.168.72.5:3306/d_travel?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 123456
 
